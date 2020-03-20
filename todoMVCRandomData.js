@@ -2,10 +2,12 @@
 
 var rando = new function(){
 
+    //This help me to create a random number.
     function getRandomInt(x){
         return Math.floor(Math.random()*x)
     }
 
+    //Here I make that the random number don't be higher that the last todo.
     function getRandomItemIndex(){
         max = document.querySelectorAll("ul.todo-list li").length;
         if (max === 0){

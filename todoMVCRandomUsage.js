@@ -1,5 +1,7 @@
 //Run this to start.
-
+//This allow me to select a function randomly.
+//Be advised that for be RANDOM maybe some functions don't have 
+//enough data to see a change.
 var randoBot = setInterval(function() {
     var theFunctions = [];
     for (var prop in rando) {
@@ -11,6 +13,7 @@ var randoBot = setInterval(function() {
     var randomFunctionIndex = Math.floor(Math.random() * theFunctions.length);
     rando[theFunctions[randomFunctionIndex]]()
     
-}, 4000);
+}, 100);
 
+//Use this to STOP the cases.
 //clearInterval(randoBot)
